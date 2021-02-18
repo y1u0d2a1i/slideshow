@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+</head>
+<body>
+    <div class="flex">
+        <div class="swiper-container left">
+            <!-- メイン表示部分 -->
+            <div class="swiper-wrapper">
+                <!-- 各スライド -->
+                <div class="swiper-slide"><img src="./images/gazelle-5992510_640.jpg" alt="" class="width100"></div>
+                <div class="swiper-slide"><img src="./images/jasper-national-park-5819878_640.jpg" alt="" class="width100"></div>
+                <div class="swiper-slide"><img src="./images/wet-3240211_640.jpg" alt="" class="width100"></div>
+            </div>
+        </div>
+        <div class="right">
+            <h1>hello</h1>
+        </div>
+    </div>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            effect: 'slide',
+            // spaceBetween: 0,
+            autoplay: {
+                delay: 1000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                reverseDirection: false
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            loop:true
+            });
+    </script>
+</body>
+</html>

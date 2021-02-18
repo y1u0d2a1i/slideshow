@@ -1,0 +1,13 @@
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+    background-color: aquamarine;
+}
+.flex{
+    display: flex;
+}
+.width100{
+    width: 100%;
+}
